@@ -11,13 +11,21 @@ Case Study 1 (Job Data)
 Below is the structure of the table with the definition of each column that you must work on:
 
 Table-1: job_data
+
 job_id: unique identifier of jobs
+
 actor_id: unique identifier of actor
+
 event: decision/skip/transfer
+
 language: language of the content
+
 time_spent: time spent to review the job in seconds
+
 org: organization of the actor
+
 ds: date in the yyyy/mm/dd format. It is stored in the form of text and we use presto to run. no need for date function
+
 Use the dataset attached in the Dataset section below the project images then answer the questions that follows
 
 Number of jobs reviewed: Amount of jobs reviewed over time.
