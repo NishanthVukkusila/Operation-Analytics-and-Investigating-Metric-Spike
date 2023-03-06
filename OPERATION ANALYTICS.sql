@@ -11,6 +11,16 @@ SELECT
 	COUNT(DISTINCT job_id)/(30*24)as JOBS_PER_HOUR_PER_DAY 
 FROM job_data
 WHERE month(ds)= "11";
+ --or
+SELECT 
+	COUNT(DISTINCT job_id)/(30*24)as JOBS_PER_HOUR_PER_DAY 
+FROM job_data
+WHERE monthname(ds)= "November";
+--or
+SELECT 
+	COUNT(DISTINCT job_id)/(30*24)as JOBS_PER_HOUR_PER_DAY 
+FROM job_data
+WHERE ds between '2020-11-01' and '2020-11-30';
 
 -- B. Throughput: It is the no. of events happening per second.
 -- task: Let’s say the above metric is called throughput. 
@@ -25,9 +35,10 @@ SELECT ds, jobs_reviewed,
 CURRENT ROW)AS 7_day_rolling_avg FROM 
 (
 SELECT ds, COUNT(DISTINCT job_id) AS jobs_reviewed
-FROM job_data WHERE monthname(ds)= "November"
+FROM job_data WHERE monthname(ds)= "November" -- here we can use month(ds)= "11", ds between '2020-11-01' and '2020-11-30', also
 GROUP BY ds 
-ORDER BY ds)a; 
+ORDER BY ds
+)a; 
 
 -- C. Percentage share of each language: Share of each language for different contents.
 -- Your task: Calculate the percentage share of each language in the last 30 days?
