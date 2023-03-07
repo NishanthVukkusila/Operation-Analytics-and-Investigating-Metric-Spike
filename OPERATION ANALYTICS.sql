@@ -38,7 +38,7 @@ SELECT ds, COUNT(DISTINCT job_id) AS jobs_reviewed
 FROM job_data WHERE monthname(ds)= "November" -- here we can use month(ds)= "11", ds between '2020-11-01' and '2020-11-30', also
 GROUP BY ds 
 ORDER BY ds
-)a; 
+)a;
 
 -- C. Percentage share of each language: Share of each language for different contents.
 -- Your task: Calculate the percentage share of each language in the last 30 days?
