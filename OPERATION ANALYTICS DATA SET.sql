@@ -10,7 +10,7 @@ CREATE TABLE job_data
     language VARCHAR(15) NOT NULL,
     time_spent INT NOT NULL,
     org CHAR(2)
-);
+); 
 
 INSERT INTO job_data (ds, job_id, actor_id, event, language, time_spent, org)
 VALUES ('2020-11-30', 21, 1001, 'skip', 'English', 15, 'A'),
