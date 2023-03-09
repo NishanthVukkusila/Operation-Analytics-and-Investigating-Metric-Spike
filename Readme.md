@@ -43,7 +43,7 @@ Your task: Calculate the percentage share of each language in the last 30 days?
 
 D.Duplicate rows: Rows that have the same value present in them.
 
-Your task: Let’s say you see some duplicate rows in the data. How will you display duplicates from the table?
+Your task: Let’s say you see some duplicate rows in the data. How will you display duplicates from the table? 
 
 **Case Study 2 (Investigating metric spike)**
 
