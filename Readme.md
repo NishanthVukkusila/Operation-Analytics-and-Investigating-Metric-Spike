@@ -20,7 +20,7 @@ actor_id: unique identifier of actor
 event: decision/skip/transfer
 
 language: language of the content
-
+ 
 time_spent: time spent to review the job in seconds
 
 org: organization of the actor
