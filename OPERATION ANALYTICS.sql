@@ -10,7 +10,7 @@
 SELECT 
 	COUNT(DISTINCT job_id)/(30*24)as JOBS_PER_HOUR_PER_DAY 
 FROM job_data
-WHERE month(ds)= "11";
+WHERE month(ds)= "11"; 
  --or
 SELECT 
 	COUNT(DISTINCT job_id)/(30*24)as JOBS_PER_HOUR_PER_DAY 
