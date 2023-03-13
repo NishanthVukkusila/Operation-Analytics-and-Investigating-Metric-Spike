@@ -120,7 +120,7 @@ event_type='engagement'
 group by 
 year, week, device
 order BY
-year, week, device
+year, week, device;
 
 
 -- E.Email Engagement: Users engaging with the email service.
